@@ -1,7 +1,7 @@
 Summary:	MATE text editor
 Name:		pluma
 Version:	1.8.1
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		X11/Applications/Editors
 Source0:	http://pub.mate-desktop.org/releases/1.8/%{name}-%{version}.tar.xz
@@ -81,7 +81,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__rm} $RPM_BUILD_ROOT%{_libdir}/pluma/*/*.la
 %{__rm} $RPM_BUILD_ROOT%{_datadir}/MateConf/gsettings/pluma.convert
-%{__rm} -r $RPM_BUILD_ROOT%{_datadir}/locale/{ca@valencia,crh,en@shaw,la}
 
 %find_lang pluma --with-mate --all-name
 
